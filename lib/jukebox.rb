@@ -29,14 +29,13 @@ def play(songs)
   puts "Please enter a song name or number:"
   inputs = gets.chomp 
   
-  songs.each_with_index do |song, i|
-    if inputs.to_i == i
-    puts "Playing #{songs[i-1]}"
-  elsif inputs == song 
-  puts "Playing #{song[i]}"
-else puts "Invalid input, please try again"
-  end 
-end 
+  if (1..9).to_a.include?(inputs.to_i)
+    puts "Playing #{songs[inputs.to_i - 1]}"
+    elsif songs.include?(inputs)
+    puts "Playing #{inputs}"
+  else 
+    puts "Invalid input, please try again"
+  end  
 end  
 
 
