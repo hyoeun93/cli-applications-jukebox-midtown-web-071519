@@ -50,4 +50,7 @@ def run
   if input == "exit"
     exit_jukebox
   end 
+  if input == "list"
+    list 
+  end 
 end 
