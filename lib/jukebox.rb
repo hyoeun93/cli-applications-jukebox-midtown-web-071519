@@ -21,4 +21,4 @@ end
 
 def list(songs)
   songs.each_with_index do |lists, index|
-    lists[index]
+    puts "#{index}. lists"
