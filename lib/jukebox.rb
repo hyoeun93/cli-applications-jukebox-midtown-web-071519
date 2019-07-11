@@ -20,5 +20,5 @@ def help
 end 
 
 def list(songs)
-  songs.each do |lists|
+  songs.each_with_index do |lists|
     lists[index]
