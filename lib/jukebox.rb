@@ -43,9 +43,10 @@ def exit_jukebox
 end
 
 def run
-  help
+  input = "" 
+  while input  
   puts "Please enter a command:"
-  input = gets.chomp 
+  input = gets.strip 
   
   case input 
     when 'list'
